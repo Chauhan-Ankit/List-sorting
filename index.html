@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <p>Assignment 1</p>
+    <div class="main-wrapper">
+        <select name="" id="userIdDD" onchange="onUserSelect(true)">
+            <option value="selectUser" selected="selected">select userID</option>
+        </select>
+
+        <table style="width:100%">
+            <tr>
+                <th><a id="todoID" data-order="asc" onclick="onUserSelect(false, 'id')">Todo ID</a></th>
+                <th><a id="todoTitle" data-order="asc" onclick="onUserSelect(false, 'title')">Todo Title</a></th> 
+                <th><a id="todoCompleted" data-order="asc" onclick="onUserSelect(false, 'completed')">Completed?</a></th>
+            </tr>
+        </table>
+    </div>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
